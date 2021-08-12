@@ -34,10 +34,9 @@ func setupRoutes() {
 	})
 }
 
-func main()
-{
+func main() {
     port := os.Getenv("PORT")
-        defaultPort := "8080"
+    defaultPort := "8080"
 	setupRoutes()
 	http.ListenAndServe("port", nil)
 }

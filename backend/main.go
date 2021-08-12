@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"github.com/Azanul/sigret-chat-app/pkg/websocket"
 	"net/http"
-	"os"
 )
 
 func serveWs(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {
@@ -36,12 +35,6 @@ func setupRoutes() {
 }
 
 func main() {
-    if !(port == "") {
-        port := os.Getenv("PORT")
-    }
-    else {
-        port := ":8080"
-    }
 	setupRoutes()
-	http.ListenAndServe(port, nil)
+	http.ListenAndServe(":8080", nil)
 }

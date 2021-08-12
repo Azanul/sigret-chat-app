@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/Azanul/sigret-chat-app/pkg/websocket"
 	"net/http"
+	"os"
 )
 
 func serveWs(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {

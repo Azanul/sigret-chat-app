@@ -1,4 +1,4 @@
-const socket = new WebSocket("ws://localhost:8080/ws");
+const socket = new WebSocket("wss://sigret-chat-87.herokuapp.com/ws");
 
 let connect = cb => {
     console.log("Attempting Connection...");

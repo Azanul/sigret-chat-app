@@ -10,13 +10,6 @@ Sigret-chat-app website - `Sigret-chat-app`_
 
 | |Maintenance yes|  |GitHub contributors|  |GNU General Public License v3.0| 
 
-
-| |ForTheBadge uses-js|  |ForTheBadge built-with-love| 
-
-.. |ForTheBadge built-with-love| image:: http://ForTheBadge.com/images/badges/built-with-love.svg
-   :target: #
-.. |ForTheBadge uses-js| image:: http://ForTheBadge.com/images/badges/uses-js.svg
-   :target: #
 .. |GNU General Public License v3.0| image:: https://img.shields.io/github/license/Azanul/sigret-chat-app?style=for-the-badge
    :target: https://github.com/Azanul/sigret-chat-app/blob/master/LICENSE
 .. |Maintenance yes| image:: https://img.shields.io/maintenance/yes/2021?style=for-the-badge

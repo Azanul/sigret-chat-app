@@ -15,11 +15,9 @@ class App extends Component {
 
   componentDidMount() {
     connect((msg) => {
-      console.log("New Message");
       this.setState(prevState => ({
         chatHistory: [...prevState.chatHistory, msg]
       }));
-      console.log(this.state);
     });
   }
 

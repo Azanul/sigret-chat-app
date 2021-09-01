@@ -1,4 +1,4 @@
-const socket = new WebSocket("wss://sigret-chat-87.herokuapp.com/ws");
+const socket = new WebSocket("ws://localhost:8080/ws");
 
 let connect = cb => {
     console.log("Attempting Connection...");
@@ -21,9 +21,9 @@ let connect = cb => {
     };
 };
 
-let sendMsg = msg => {
-    console.log("sending msg: ", msg);
-    socket.send(msg);
+let sendMsg = (type, msg) => {
+    console.log("sending msg: ", type, msg);
+    socket.send(JSON.stringify({type: type, body: msg}));
 };
 
 export { connect, sendMsg };

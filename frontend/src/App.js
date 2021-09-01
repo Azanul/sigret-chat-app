@@ -9,6 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      key: "React",
       chatHistory: []
     };
   }
@@ -23,15 +24,22 @@ class App extends Component {
 
   send(event) {
     if(event.keyCode === 13){
-      sendMsg(event.target.value);
+      sendMsg(1, event.target.value);
       event.target.value = "";
     }
+  }
+
+  changeKey(key) {
+    // this.setState(({
+    //   key: key
+    // }));
+    sendMsg(0, key)
   }
 
   render() {
     return (
         <div className="App">
-          <Header/>
+          <Header keyChange={this.changeKey} key={this.state.key}/>
           <ChatHistory chatHistory={this.state.chatHistory} />
           <ChatInput send={this.send}/>
         </div>
